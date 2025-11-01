@@ -167,15 +167,27 @@ elif page == "Contact":
         <style>
             .sidebar-button {
                 display: inline-block;
+                width: 350px;
                 padding: 10px 18px;
                 border-radius: 8px;
-                background: linear-gradient(90deg,#153969,#718bab);
+                background-color: #0B0E14;
                 color: white !important;
                 text-decoration: none;
                 font-weight: 600;
                 text-align: center;
+                border: 2px solid rgba(255, 255, 255, 0.3);  /* Soft white stroke */
+                transition: all 0.3s ease;
             }
-        .btn-container { display:flex; gap:10px; }
+            .sidebar-button:hover {
+                border-color: rgba(255, 255, 255, 0.8);
+                transform: scale(1.03);
+            }
+            .btn-container {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+            .btn-container { display:flex; gap:10px; }
         </style>
     """, unsafe_allow_html=True)
 
