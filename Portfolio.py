@@ -16,6 +16,9 @@ import base64
 # number = st.slider("Enter your age: ", 0, 100)
 # st.write(f"You are {number} years old.")
 
+# PAGE SETUP
+st.set_page_config(page_title="My Portfolio", page_icon="📘", layout="wide")
+
 with open("citu.jpg", "rb") as f:    # open and read the image file para bg image sa sidebar
     img_base64 = base64.b64encode(f.read()).decode()
 
@@ -34,8 +37,7 @@ st.markdown(f"""
 """, unsafe_allow_html=True) # had to ask help from AI xDDDDDD
 
 
-# PAGE SETUP
-st.set_page_config(page_title="My Portfolio", page_icon="📘", layout="wide")
+
 
 # HEADER SECTION
 st.title("Portfolio")
