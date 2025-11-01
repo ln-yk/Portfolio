@@ -161,9 +161,9 @@ elif page == "Contact":
     st.write("You can reach me through any of the following platforms:")
 
     col1, col2, col3 = st.columns(3)
-    col1.link_button("GitHub", "https://github.com/ln-yk?tab=repositories", help="View my repositories", width='stretch')
-    col2.link_button("Teams", "https://teams.microsoft.com/v2/", help="Aldrin D. Suse", width='stretch')
-    col3.link_button("Email Me on Outlook", "mailto:aldrin.suse@cit.edu", width='stretch')
+    col1.link_button("GitHub", "https://github.com/ln-yk?tab=repositories", help="View my repositories", width=350)
+    col2.link_button("Teams", "https://teams.microsoft.com/v2/", help="Aldrin D. Suse", width=350)
+    col3.link_button("Email Me on Outlook", "mailto:aldrin.suse@cit.edu", width=350)
 
     st.markdown("---")
     st.subheader("Send me a Message")
