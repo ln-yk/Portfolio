@@ -154,16 +154,35 @@ elif page == "Skills":
         st.write(f"{skill} - {progress}%")
         st.progress(progress)
 
+
+
+
 # CONTACT PAGE
 elif page == "Contact":
     st.header("Contact Me")
 
     st.write("You can reach me through any of the following platforms:")
 
+    st.markdown("""
+        <style>
+            .sidebar-button {
+                display: inline-block;
+                padding: 10px 18px;
+                border-radius: 8px;
+                background: linear-gradient(90deg,#153969,#718bab);
+                color: white !important;
+                text-decoration: none;
+                font-weight: 600;
+                text-align: center;
+            }
+        .btn-container { display:flex; gap:10px; }
+        </style>
+    """, unsafe_allow_html=True)
+
     col1, col2, col3 = st.columns(3)
-    col1.link_button("GitHub", "https://github.com/ln-yk?tab=repositories", help="View my repositories", width=350)
-    col2.link_button("Teams", "https://teams.microsoft.com/v2/", help="Aldrin D. Suse", width=350)
-    col3.link_button("Email Me on Outlook", "mailto:aldrin.suse@cit.edu", width=350)
+    col1.markdown(f"<div class='btn-container'><a class='sidebar-button' href='https://github.com/ln-yk?tab=repositories' target='_blank'>GitHub</a></div>", unsafe_allow_html=True)
+    col2.markdown(f"<div class='btn-container'><a class='sidebar-button' href='https://teams.microsoft.com/v2/' target='_blank'>Teams</a></div>", unsafe_allow_html=True)
+    col3.markdown(f"<div class='btn-container'><a class='sidebar-button' href='mailto:aldrin.suse@cit.edu' target='_blank'>Email</a></div>", unsafe_allow_html=True)
 
     st.markdown("---")
     st.subheader("Send me a Message")
